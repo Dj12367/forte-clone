@@ -6,8 +6,15 @@ pip install torch==2.0.0+cu117 torchvision torchaudio --index-url https://downlo
 # Download and install Miniconda
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda
-$HOME/miniconda/bin/conda init
-source ~/.bashrc
+export PATH="$HOME/miniconda/bin:$PATH"
+eval "$($HOME/miniconda/bin/conda shell.bash hook)"
+
+# Print the current conda environment
+echo "Current Conda environment: $(conda info --envs | grep '*' | awk '{print $1}')"
+
+# Print the current conda environment
+echo "Current Conda environment: $(conda info --envs | grep '*' | awk '{print $1}')"
+
 
 # Navigate to the checkpoints directory
 cd checkpoints
