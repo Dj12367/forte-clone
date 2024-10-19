@@ -1,4 +1,4 @@
-export PYTHONPATH="your PYTHON PATH"
+export PYTHONPATH="./evaluation:/usr/bin/python"
 
 #This code capture the report output during the optimization process and record the report to an excel file (which should be specified in /pipeline/train/eval.py
 CUDA_VISIBLE_DEVICES=1 accelerate launch --config_file=./evaluation/pipeline/accelerate_configs/accelerate_config_fsdp.yaml \
