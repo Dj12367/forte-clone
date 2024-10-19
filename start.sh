@@ -26,7 +26,7 @@ git lfs install
 
 # Clone repositories using git-lfs
 # git lfs clone https://huggingface.co/luodian/OTTER-MPT7B-Init.git
-git clone https://huggingface.co/Charliebear/BrainGPT
+git lfs clone https://huggingface.co/Charliebear/BrainGPT
 
 # Navigate back to the main directory
 cd ../
