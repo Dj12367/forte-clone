@@ -3,10 +3,6 @@
 # Install PyTorch with CUDA support
 pip install torch==2.0.0+cu117 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
 
-# Clone the FORTE repository
-git clone https://github.com/charlierabea/FORTE.git
-cd FORTE
-
 # Download and install Miniconda
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda
